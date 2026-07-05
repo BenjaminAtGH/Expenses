@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    
+    <title>Expenses</title>
+</head>
+<body>
+    <div id="nav"></div>
+    <!-- <div>
+        <a href="Index.html"><h2 >Home</h2></a>
+        <a href="ExpenseDash.html"><h2 >Dash</h2></a>
+    </div > -->
+    <h2>Expense</h2>
+    <div class="inputs">
+        
+        <label>
+            Timestamp
+            <input type="date" id="date" name="date">
+        </label>
+        <label>
+            Category
+            <select id="category" name="category">
+                <option value="food">Food</option>
+                <option value="transportation">Transportation</option>
+                <option value="entertainment">Entertainment</option>
+                <option value="utilities">Utilities</option>
+                <option value="other">Other</option>
+            </select>
+        </label>
+        <label>
+            Item
+            <input type="text" id="item" name="item">
+        </label>
+        <label>
+            Amount
+            <input type="number" step="1" id="amount" name="amount" step="0.01">
+        </label>
+        <label>
+            Price
+            <input type="number" id="price" name="price">
+        </label>
+
+    </div>
+    <div class="buttons">
+        <button id="addExpense">Add Expense</button>
+        <button id="clearExpenses">Clear Expenses</button>
+        <button id="submit">Submit</button>
+    </div>
+    <div class="table-container">
+        <table id="expenseTable">
+            <thead>
+                <tr>
+                    <th class="col-timestamp">Waktu</th>
+                    <th class="col-category">Kategori</th>
+                    <th class="col-item">Item</th>
+                    <th class="col-amount">Qty</th>
+                    <th class="col-price">Harga</th>
+                    <th class="col-del"> - </th>
+
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Expense rows will be added here dynamically -->
+            </tbody>
+        </table>
+        <script src="Components/loadcomponents.js"></script>
+</body>
+</html>

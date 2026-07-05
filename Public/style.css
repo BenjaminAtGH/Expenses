@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    padding: 10px;
+    border: 1px solid #000;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+
+}
+
+nav a{
+    text-decoration: none;
+    color: #000;
+    border: 1px solid #000;
+    border-radius: 5px;
+    padding-inline: 10px;
+}
+
+nav a:hover{
+    background-color: rgb(139, 131, 131);
+    border: 1px solid rgb(124, 119, 119);
+
+
+}
+.inputs{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    
+}
+
+label{
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    /* border: 1px solid #000; */
+}
+input, select, option{
+    height: 40px;
+    width: auto;
+    border-radius: 5px;
+}
+
+
+input[type="number"]::-webkit-inner-spin-button,input[type="number"]::-webkit-outer-spin-button{
+    -webkit-appearance: none;
+    margin: 0
+    ;
+} 
+
+
+.buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+    margin: 10px;
+}
+button{
+    padding-inline:  10px;
+    height: 40px;
+    border-radius: 5px;
+    color: rgb(88, 144, 194);
+}
+
+.delete-button{
+    margin: 0%;
+    padding: 0%;
+    height: 100%;
+    width: 100%;
+    background-color: brown;
+    color: rgb(255, 255, 255);
+    
+
+}
+
+.tablecontainer{
+    width: auto;
+    
+    border: 3px solid rgb(31, 198, 31)
+}
+
+table{
+    width: auto;
+    
+}
+
+table, th{
+    border: 1px solid #010 ;
+}
+
+.col-timestamp{
+    width: 20%;
+    padding-inline: 5px;
+}
+.col-category{
+    width: 20%;padding-inline: 5px;
+}
+.col-item{
+    width: 25%;padding-inline: 5px;
+}
+.col-amount{
+    width: 10%;padding-inline: 5px;
+}
+.col-price{
+    width: 20%;padding-inline: 5px;
+}
+.col-del{
+    width: 5%;padding-inline: 5px;
+}
